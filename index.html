@@ -1,46 +1,144 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-    <style>
-     <style type="text/css">
-   .formula { 
-    font-size: 1.6em; 
-    font-style: italic;
-   }
-   .formula sup, .formula sub {
-    font-style: normal; 
-    font-size: 0.6em; 
-    color: red;
-   }
-   .formula sub {
-    color: blue;
-   }
-   .big { font-size: 3em; }
-   .tex {
-    font-family: serif;
-    letter-spacing: -0.1em;
-   }
-   .tex span {vertical-align: -0.2em;}
-    </style>
-  </head>
-  <body>
-  <p class="big">Math <span class="tex">B<span>O</span>O</span>K</span></p>
-  </body>
-  <ul>
-    <li>Пункт 1
-      <ul>
-      <li>Подпункт 1.1</li>
-      <p>Многочлен степени <em>n</em>
-   <p class="formula">f(x) = a<sub>0</sub> + a<sub>1</sub> x + ... + 
-   a<sub>n-1</sub> x<sup>n-1</sup> + a<sub>n</sub> x<sup>n</sup></p></>
-      <li>Подпункт 1.2  </li>
-      </ul>
-    </li>
-    <li>Пункт 2 
-      <ul>
-      <li>Подпункт 2.1</li>
-      <li>Подпункт 2.2  </li>
-      </ul>
-    </li>
-    </ul>
+<head>
+    <meta charset="utf-8" />
+    <title>Главная</title>
+    <link rel="stylesheet" type="text/css" href="./css/template.css" media="screen, projection" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen, projection" />
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.7");
+    </script>
+    <script type="text/javascript" src="./js/jquery.jcarousel.min.js"></script>
+</head>
+<body>
+
+<div id="main" class="wrapper">
+    <div class="header">
+        <div id="menu">
+            <ul class="menu clearfix">
+                <li><a href="#">Главная</a></li>
+                <li class="active"><a href="#">Виды ремонта</a></li>
+                <li><a href="#">Сроки ремонта</a></li>
+                <li><a href="#">Гарантии</a></li>
+                <li><a href="#">Оплата и условия</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <div class="logo clearfix">
+                <a href="/"><img src="./images/logo.png" alt="" /></a>
+            </div>
+
+            <table class="shot-form-info">
+                <tr>
+                    <td class="phone">(383) 255-67-08 <br>(383) 255-67-08</td>
+                    <td class="address"><p>г. Новосибирск, ул. Советская, 30 </p>
+                        <p>г. Новосибирск, ул. Фабричная, 35а</p></td>
+                </tr>
+                <tr class="go-contacts">
+                    <td><a href="#">Написать нам</a></td>
+                    <td><a href="#">Как проехать</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="slider">
+        <ul id="site-slider">
+            <li>
+                <div class="img"><img src="./images/slider/1.png" alt="" /></div>
+                <div class="title"><a href="#">Носители информации
+                    <br>Серверы</a></div>
+            </li>
+            <li>
+                <div class="img"><img src="./images/slider/2.png" alt="" /></div>
+                <div class="title"><a href="#">Плоттеры, сканеры
+                    <br>Печатное оборудование</a></div>
+            </li>
+            <li>
+                <div class="img"><img src="./images/slider/3.png" alt="" /></div>
+                <div class="title"><a href="#">Мониторы телевизоры</a></div>
+            </li>
+            <li>
+                <div class="img"><img src="./images/slider/4.png" alt="" /></div>
+                <div class="title"><a href="#">Ноутбуки, Коммуникаторы <br>
+                    Персональные компьютеры</a></div>
+            </li>
+            <li>
+                <div class="img"><img src="./images/slider/5.png" alt="" /></div>
+                <div class="title"><a href="#">Акты на списание
+                    <br>Утилизация
+                    <br>оборудования</a></div>
+            </li>
+            <li>
+                <div class="img"><img src="./images/slider/1.png" alt="" /></div>
+                <div class="title"><a href="#">Носители информации
+                    <br>Серверы</a></div>
+            </li>
+        </ul>
+        <script type="text/javascript">
+            $(function() {
+                $('#site-slider').jcarousel();
+            });
+        </script>
+    </div>
+
+    <div class="middle clearfix">
+        <div class="leftSide">
+            <div class="content" id="content">
+                <h1>О компании</h1>
+
+                <h3>Наша компания существует 6 лет предоставляет услуги грузоперевозки в г. Новосибирске и
+                    области. Имеет свой парк автомобилей грузовые газели, длина кузова 4 метра. Наш сервис
+                    позволит  быстро заказать газели.</h3>
+
+                <p>Оборудование диспетчерского центра  грузоперевозки - одно из самых совершенных в
+                    г. Новосибирске и насыщены навигационными системами, которые позволяет диспетчеру
+                    увидеть, где находится ваш груз, а также  правильно и быстро принимать нужные решения.
+                </p>
+
+                <p>Оборудование диспетчерского центра  грузоперевозки - одно из самых совершенных в г.
+                    Новосибирске и насыщены навигационными системами, которые позволяет диспетчеру
+                    увидеть, где находится ваш груз, а также  правильно и быстро принимать нужные решения.</p>
+            </div>
+        </div>
+
+        <div class="rightSide">
+            <div class="module custom-menu">
+                <ul class="right-menu">
+                    <li><a href="#">Вопрос - ответ</a></li>
+                    <li><a href="#">Рекомендации</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Состояние заказа</a></li>
+                </ul>
+            </div>
+
+            <div class="module news">
+                <h2>Новости</h2>
+
+                <dl class="events">
+                    <dt>19.01.11</dt>
+                    <dd><a href="#">Men’s Digest: платки от Канье Уэста, флорентийская мода и фильм о гонщике-рекордсмене</a></dd>
+                    <dt>19.01.11</dt>
+                    <dd><a href="#">Леди Гага выпустила сингл «The Edge of Glory»</a></dd>
+                    <dt>19.01.11</dt>
+                    <dd><a href="#">Леди Гага выпустила сингл «The Edge of Glory»</a></dd>
+                </dl>
+
+                <a href="#" class="all_events">Все новости</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer clearfix">
+        <div class="copyright">&copy; 2012 Перевозки54</div>
+        <div class="made">Разработка — <a href="http://dishman.ru" title="Разработка сайтов Dishman.ru"><img src="images/made.png" alt="" /></a></div>
+    </div>
+</div>
+
+</body>
 </html>
