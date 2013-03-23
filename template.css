@@ -1,0 +1,282 @@
+* {margin: 0; padding: 0;}
+
+html {
+    height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #333;
+    height: 100%;
+}
+
+img {border: 0;}
+
+a {
+    color: #000;
+}
+a:hover {
+    text-decoration: none;
+}
+
+ul {list-style: none;}
+
+h1 {
+    font-size: 28px;
+    margin: 0 0 0.8em;
+}
+h2 {
+    font-size: 18px;
+    margin: 0 0 0.8em;
+}
+h3 {
+    font-size: 14px;
+    margin: 0 0 1em;
+}
+h4 {
+    margin: 0 0 1em;
+}
+
+h2, h3 {
+
+}
+
+table, table td {
+    vertical-align: top;
+}
+
+.fleft { float: left; }
+.fright { float: right; }
+.clr { clear: both; }
+
+.clearfix:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.clearfix {display:block;}
+
+
+.wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/* Content
+---------------------------------- */
+div.content {}
+div.content p {
+    margin: 0 0 1em;
+    line-height: 18px;
+}
+div.content ul {
+    margin: 0 0 1em;
+    list-style: disc;
+    padding-left: 1.3em;
+}
+div.content li {
+    margin: 0 0 0.5em;
+}
+div.content h1 {}
+div.content h2 {}
+div.content h3 {}
+div.content h4 {}
+
+/*
+----------------------------------*/
+#main {
+    background: #fff;
+    box-shadow: 0 0 10px #aaa;
+}
+.header {
+    background: url(../images/header_bg.png) repeat-x;
+    height: 155px;
+}
+
+/*Slider*/
+.slider {
+    background: url(../images/slider_bg.png) repeat-x;
+    height: 200px;
+    overflow: hidden;
+}
+.jcarousel-clip {
+    margin: 0 65px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.jcarousel-prev,
+.jcarousel-next {
+    background: url(../images/slider_arrows.png) no-repeat;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 80px;
+    cursor: pointer;
+}
+.jcarousel-prev {
+    left: 10px;
+}
+.jcarousel-next {
+    background-position: 0 100%;
+    right: 10px;
+}
+.jcarousel-prev[disabled=disabled],
+.jcarousel-next[disabled=disabled] {
+    cursor: auto;
+}
+
+#site-slider li {
+    width: 170px;
+}
+#site-slider .img {
+    text-align: center;
+}
+#site-slider .title {
+    padding: 0 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* Main menu */
+#menu {
+    background: url(../images/menu_left_bg.png) no-repeat;
+    padding-left: 10px;
+    margin-left: 50px;
+}
+
+.menu {
+    height: 44px;
+    background-color: #034C92;/*style*/
+    padding-left: 5px;
+}
+.menu li {
+    float: left;
+    line-height: 44px;
+    margin-right: 18px;
+}
+.menu a {
+    color: #FFD75E;/*style*/
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.menu li.active a,
+.menu a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.info {
+    padding: 10px 65px 0;
+}
+.logo {
+    float: left;
+}
+.shot-form-info {
+    float: right;
+    padding-top: 15px; /*style*/
+    color: #000;
+}
+.phone {
+    font-size: 18px;
+    font-weight: bold;
+}
+.address {
+    font-size: 13px;
+    padding-left: 80px;
+}
+.info .go-contacts a {
+    font-size: 11px;
+    /*font-weight: bold;*/
+    color: #004481;
+}
+.info .go-contacts td {
+    padding: 5px 0;
+    text-align: right;
+}
+
+/* Middle */
+.middle {
+    background: url(../images/content-top-border.png) repeat-x;
+    padding: 30px 0 30px 65px;
+    overflow: hidden;
+}
+
+.leftSide {
+    float: left;
+    width: 100%;
+}
+.rightSide {
+    float: left;
+    width: 300px;
+    margin-left: -300px;
+}
+#content {
+    padding-right: 330px;
+}
+
+/*Modules*/
+.module {
+    margin: 0 0 25px;
+    padding: 20px 65px 20px 20px;
+}
+
+/*Right Menu*/
+.custom-menu {
+    background-color: #FFDA6A;
+    border-radius: 10px 0 0 10px;
+}
+.right-menu {
+    padding-right: 30px;
+}
+.right-menu li {
+    border-bottom: solid 1px #FFD042;
+    padding: 8px 0;
+}
+.right-menu li:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+.right-menu a {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #013467;
+}
+.right-menu a:hover {
+    text-decoration: underline;
+    color: #5FACFC;
+}
+
+/*Events*/
+.events dt {
+    color: #004482;
+    font-size: 0.9em;
+    margin: 0 0 0.5em;
+}
+.events dd {
+    margin: 0 0 20px;
+}
+.events a {
+    color: #666;
+    text-decoration: none;
+}
+.events a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background: url(../images/footer_bg.png) repeat-x;
+    padding: 25px;
+    margin: 0 40px;
+    color: #999;
+    font-size: 0.9em;
+}
+.footer .copyright {
+    float: left;
+}
+.footer .made img {
+    vertical-align: bottom;
+}
+.footer .made {
+    float: right;
+}
+.footer .made a:hover {
+    opacity: 0.7;
+}
