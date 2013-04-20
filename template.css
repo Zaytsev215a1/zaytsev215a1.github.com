@@ -85,13 +85,13 @@ div.content h4 {}
     box-shadow: 0 0 10px #aaa;
 }
 .header {
-    background: url(../images/header_bg.png) repeat-x;
+    background: url(header_bg.png) repeat-x;
     height: 155px;
 }
 
 /*Slider*/
 .slider {
-    background: url(../images/slider_bg.png) repeat-x;
+    background: url(slider_bg.png) repeat-x;
     height: 200px;
     overflow: hidden;
 }
@@ -102,7 +102,7 @@ div.content h4 {}
 }
 .jcarousel-prev,
 .jcarousel-next {
-    background: url(../images/slider_arrows.png) no-repeat;
+    background: url(slider_arrows.png) no-repeat;
     width: 36px;
     height: 36px;
     position: absolute;
@@ -135,7 +135,7 @@ div.content h4 {}
 
 /* Main menu */
 #menu {
-    background: url(../images/menu_left_bg.png) no-repeat;
+    background: url(menu_left_bg.png) no-repeat;
     padding-left: 10px;
     margin-left: 50px;
 }
@@ -192,7 +192,7 @@ div.content h4 {}
 
 /* Middle */
 .middle {
-    background: url(../images/content-top-border.png) repeat-x;
+    background: url(content-top-border.png) repeat-x;
     padding: 30px 0 30px 65px;
     overflow: hidden;
 }
@@ -262,7 +262,7 @@ div.content h4 {}
 
 /* Footer */
 .footer {
-    background: url(../images/footer_bg.png) repeat-x;
+    background: url(footer_bg.png) repeat-x;
     padding: 25px;
     margin: 0 40px;
     color: #999;
