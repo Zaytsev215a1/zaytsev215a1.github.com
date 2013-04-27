@@ -246,7 +246,7 @@ div.content h4 {}
 
 /* Footer */
 .footer {
-    background: url(footer_bg.png) repeat-x;
+    background-color:blue ;
     padding: 25px;
     margin: 0 40px;
     color: #999;
