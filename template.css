@@ -22,7 +22,7 @@ a:hover {
 ul {list-style: none;}
 
 h1 {
-    font-size: 24%;
+    font-size: 28px;
     margin: 0 0 0.8em;
 }
 h2 {
@@ -55,6 +55,7 @@ table, table td {
 
 .wrapper {
     width: 980px;
+    height:100%;
     margin: 0 auto;
 }
 
