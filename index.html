@@ -71,7 +71,11 @@
         </ul>
         <script type="text/javascript">
             $(function() {
-                $('#site-slider').jcarousel();
+                $('#site-slider').jcarousel({
+                    scroll: 1,
+                    visible: 4,
+                    wrap: 'circular'
+                });
             });
         </script>
     </div>
