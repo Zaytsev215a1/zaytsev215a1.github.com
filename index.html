@@ -40,39 +40,30 @@
         <ul id="site-slider">
             <li>
                 <div class="img"><img src="1.png" alt="" /></div>
-                <div class="title"><a href="javascript:;">Носители информации
+                <div class="title"><a href="javascript:;" data-target="Text_1">Носители информации
                     <br>Серверы</a></div>
             </li>
             <li>
                 <div class="img"><img src="2.png" alt="" /></div>
-                <div class="title"><a href="javascript:;">Плоттеры, сканеры
+                <div class="title"><a href="javascript:;" data-target="Text_2">Плоттеры, сканеры
                     <br>Печатное оборудование</a></div>
             </li>
             <li>
                 <div class="img"><img src="3.png" alt="" /></div>
-                <div class="title"><a href="javascript:;">Мониторы телевизоры</a></div>
+                <div class="title"><a href="javascript:;" data-target="Text_3">Мониторы телевизоры</a></div>
             </li>
             <li>
                 <div class="img"><img src="4.png" alt="" /></div>
-                <div class="title"><a href="javascript:;">Ноутбуки, Коммуникаторы <br>
+                <div class="title"><a href="javascript:;" data-target="Text_4">Ноутбуки, Коммуникаторы <br>
                     Персональные компьютеры</a></div>
             </li>
             <li>
                 <div class="img"><img src="5.png" alt="" /></div>
-                <div class="title"><a href="javascript:;">Акты на списание
+                <div class="title"><a href="javascript:;" data-target="Text_5">Акты на списание
                     <br>Утилизация
                     <br>оборудования</a></div>
             </li>
         </ul>
-        <script type="text/javascript">
-            $(function() {
-                $('#site-slider').jcarousel({
-                    scroll: 1,
-                    visible: 4,
-                    wrap: 'circular'
-                });
-            });
-        </script>
     </div>
 
     <div class="middle clearfix">
@@ -148,5 +139,27 @@
     </div>    
 </div>
 
+<script type="text/javascript">
+$(function() {
+    $('#site-slider').jcarousel({
+        scroll: 1,
+        visible: 4,
+        wrap: 'circular'
+    });
+    
+    $('#site-slider').on('click', '.title a', function() {
+        var $content = $('#content')
+        
+        var $page = $('#'+$(this).data('target'));        
+        var $page_h1 = $page.find('.title').html();
+        var $page_text = $page.find('.content').html();
+        
+        $content.html('');        
+        
+        $content.append($page_h1);
+        $content.append($page_text);
+    });
+});
+</script>
 </body>
 </html>
